@@ -36,7 +36,7 @@ button.addEventListener("click", () => {
     let num = 0;
     while (flag == 0) {
         num = prompt("How many squares per side? (Input a number, maximum 100)");
-        if (num <= 100) {
+        if (num >= 1 && num <= 100) {
             flag = 1;
         }
         else {
